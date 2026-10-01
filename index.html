@@ -1,0 +1,2302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tu contenido profesional por $250.000/mes | Franja Creativa</title>
+
+  <meta
+    name="description"
+    content="Creación y gestión de contenido para negocios. Valor habitual $550.000/mes. Octubre, noviembre y diciembre por $250.000/mes."
+  >
+
+  <meta name="theme-color" content="#9FE8F5">
+
+  <style>
+    :root {
+      --blue: #9FE8F5;
+      --blue-2: #62D8EA;
+      --black: #070707;
+      --black-2: #101010;
+      --black-3: #171717;
+      --white: #ffffff;
+      --gray: #9b9b9b;
+      --gray-2: #cfcfcf;
+      --green: #25D366;
+      --red: #ff5555;
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 36px));
+      margin: auto;
+    }
+
+    /* ================================
+       TOP BAR
+    ================================= */
+
+    .topbar {
+      background: var(--blue);
+      color: #000;
+      text-align: center;
+      padding: 10px 15px;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .2px;
+      position: relative;
+      z-index: 50;
+    }
+
+    .topbar strong {
+      font-size: 13px;
+    }
+
+    /* ================================
+       NAV
+    ================================= */
+
+    header {
+      padding: 22px 0;
+      position: absolute;
+      top: 38px;
+      left: 0;
+      right: 0;
+      z-index: 20;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 950;
+      letter-spacing: -1.5px;
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      font-size: 12px;
+      font-weight: 900;
+      border: 1px solid rgba(255,255,255,.25);
+      padding: 10px 16px;
+      border-radius: 999px;
+    }
+
+    /* ================================
+       HERO
+    ================================= */
+
+    .hero {
+      min-height: 850px;
+      display: flex;
+      align-items: center;
+      padding: 150px 0 90px;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 80% 30%,
+          rgba(159,232,245,.16),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 10% 90%,
+          rgba(159,232,245,.08),
+          transparent 28%
+        ),
+        var(--black);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      right: -500px;
+      top: -300px;
+      border: 1px solid rgba(159,232,245,.1);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 70px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--blue);
+      border: 1px solid rgba(159,232,245,.35);
+      background: rgba(159,232,245,.07);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .pulse {
+      width: 7px;
+      height: 7px;
+      background: var(--blue);
+      border-radius: 50%;
+      box-shadow: 0 0 14px var(--blue);
+    }
+
+    h1 {
+      font-size: clamp(45px, 6vw, 78px);
+      line-height: .92;
+      letter-spacing: -4px;
+      max-width: 760px;
+      margin-bottom: 27px;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero-lead {
+      max-width: 650px;
+      color: #d0d0d0;
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+
+    .hero-lead strong {
+      color: #fff;
+    }
+
+    .hero-bullets {
+      display: grid;
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+
+    .hero-bullet {
+      display: flex;
+      gap: 10px;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    .check {
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      min-height: 58px;
+      padding: 0 25px;
+      border-radius: 12px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 950;
+      font-size: 14px;
+      cursor: pointer;
+      border: 0;
+      transition: .2s ease;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #000;
+      box-shadow: 0 10px 40px rgba(159,232,245,.16);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 50px rgba(159,232,245,.25);
+    }
+
+    .btn-secondary {
+      background: #161616;
+      border: 1px solid #333;
+      color: #fff;
+    }
+
+    .hero-small {
+      color: #707070;
+      font-size: 11px;
+    }
+
+    /* ================================
+       OFFER CARD
+    ================================= */
+
+    .offer {
+      border-radius: 27px;
+      border: 1px solid #303030;
+      background: linear-gradient(
+        150deg,
+        #171717,
+        #0d0d0d
+      );
+      padding: 34px;
+      box-shadow: 0 40px 100px rgba(0,0,0,.55);
+      position: relative;
+    }
+
+    .offer::before {
+      content: "PROMO OCTUBRE → DICIEMBRE";
+      position: absolute;
+      top: -13px;
+      left: 25px;
+      background: var(--blue);
+      color: #000;
+      padding: 7px 12px;
+      font-size: 10px;
+      font-weight: 950;
+      border-radius: 7px;
+    }
+
+    .offer-label {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .old-price {
+      color: #666;
+      text-decoration: line-through;
+      font-size: 19px;
+    }
+
+    .new-price {
+      font-size: 67px;
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -4px;
+      margin: 4px 0;
+    }
+
+    .new-price small {
+      font-size: 17px;
+      color: #888;
+      letter-spacing: 0;
+    }
+
+    .saving {
+      display: inline-block;
+      color: var(--blue);
+      background: rgba(159,232,245,.08);
+      padding: 6px 9px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 900;
+      margin: 8px 0 18px;
+    }
+
+    .offer-desc {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    .offer-list {
+      list-style: none;
+      border-top: 1px solid #292929;
+      padding-top: 20px;
+      margin-bottom: 24px;
+    }
+
+    .offer-list li {
+      display: flex;
+      gap: 9px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #ddd;
+    }
+
+    .offer .btn {
+      width: 100%;
+    }
+
+    .offer-note {
+      text-align: center;
+      color: #666;
+      font-size: 10px;
+      margin-top: 12px;
+    }
+
+    /* ================================
+       NUMBERS
+    ================================= */
+
+    .numbers {
+      background: var(--blue);
+      color: #000;
+      padding: 22px 0;
+    }
+
+    .numbers-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
+
+    .number {
+      text-align: center;
+      padding: 5px 15px;
+      border-right: 1px solid rgba(0,0,0,.15);
+    }
+
+    .number:last-child {
+      border: 0;
+    }
+
+    .number strong {
+      display: block;
+      font-size: 19px;
+      font-weight: 950;
+    }
+
+    .number span {
+      font-size: 10px;
+      font-weight: 700;
+      opacity: .65;
+    }
+
+    /* ================================
+       SECTION
+    ================================= */
+
+    section {
+      padding: 110px 0;
+    }
+
+    .tag {
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .title {
+      font-size: clamp(39px, 5vw, 62px);
+      line-height: .97;
+      letter-spacing: -3px;
+      max-width: 850px;
+      margin-bottom: 18px;
+    }
+
+    .subtitle {
+      max-width: 690px;
+      color: #999;
+      font-size: 17px;
+    }
+
+    /* ================================
+       PROBLEM
+    ================================= */
+
+    .problem {
+      background: #f2f2f2;
+      color: #080808;
+    }
+
+    .problem .tag {
+      color: #168da4;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 17px;
+      margin-top: 50px;
+    }
+
+    .problem-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .problem-card .icon {
+      font-size: 28px;
+      margin-bottom: 35px;
+    }
+
+    .problem-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .problem-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* ================================
+       CONTRAST
+    ================================= */
+
+    .contrast {
+      background: #0e0e0e;
+    }
+
+    .contrast-box {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid #292929;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .contrast-side {
+      padding: 40px;
+    }
+
+    .contrast-side.bad {
+      background: #151515;
+    }
+
+    .contrast-side.good {
+      background: var(--blue);
+      color: #000;
+    }
+
+    .contrast-side h3 {
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+
+    .contrast-list {
+      list-style: none;
+    }
+
+    .contrast-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      font-size: 14px;
+    }
+
+    .good .contrast-list li {
+      border-color: rgba(0,0,0,.13);
+    }
+
+    /* ================================
+       MECHANISM
+    ================================= */
+
+    .mechanism {
+      background: #070707;
+    }
+
+    .mechanism-grid {
+      margin-top: 55px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 17px;
+    }
+
+    .mechanism-card {
+      background: #111;
+      border: 1px solid #292929;
+      padding: 32px;
+      border-radius: 20px;
+    }
+
+    .mechanism-number {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 950;
+      margin-bottom: 45px;
+    }
+
+    .mechanism-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .mechanism-card p {
+      color: #888;
+      font-size: 14px;
+    }
+
+    /* ================================
+       INCLUDES
+    ================================= */
+
+    .includes {
+      background: #111;
+    }
+
+    .includes-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      margin-top: 55px;
+      align-items: start;
+    }
+
+    .includes-sticky {
+      position: sticky;
+      top: 30px;
+    }
+
+    .includes-sticky h2 {
+      font-size: 45px;
+      line-height: .98;
+      letter-spacing: -2px;
+      margin-bottom: 18px;
+    }
+
+    .includes-sticky p {
+      color: #888;
+      margin-bottom: 25px;
+    }
+
+    .includes-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .include {
+      background: #171717;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 15px;
+    }
+
+    .include-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(159,232,245,.1);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      font-weight: 950;
+    }
+
+    .include h3 {
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .include p {
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* ================================
+       VALUE ANCHOR
+    ================================= */
+
+    .anchor {
+      background: var(--blue);
+      color: #000;
+    }
+
+    .anchor .tag {
+      color: #168da4;
+    }
+
+    .anchor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 45px;
+    }
+
+    .anchor h2 {
+      font-size: clamp(42px,5vw,65px);
+      line-height: .95;
+      letter-spacing: -3px;
+    }
+
+    .price-comparison {
+      background: #080808;
+      color: white;
+      border-radius: 23px;
+      padding: 34px;
+    }
+
+    .price-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 17px 0;
+      border-bottom: 1px solid #292929;
+      font-size: 14px;
+      gap: 20px;
+    }
+
+    .price-line:last-child {
+      border: 0;
+    }
+
+    .price-line strong {
+      color: var(--blue);
+      white-space: nowrap;
+    }
+
+    .price-line.big {
+      font-size: 19px;
+      font-weight: 950;
+    }
+
+    .price-line.big strong {
+      font-size: 24px;
+    }
+
+    .saving-total {
+      background: rgba(0,0,0,.12);
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    /* ================================
+       PROOF
+    ================================= */
+
+    .proof {
+      background: #080808;
+    }
+
+    .proof-grid {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+    }
+
+    .proof-card {
+      border: 1px solid #292929;
+      background: #111;
+      border-radius: 20px;
+      padding: 28px;
+    }
+
+    .stars {
+      color: var(--blue);
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .proof-card p {
+      color: #ddd;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .proof-author {
+      color: #666;
+      font-size: 11px;
+    }
+
+    .proof-warning {
+      color: #555;
+      font-size: 10px;
+      margin-top: 15px;
+    }
+
+    /* ================================
+       OBJECTIONS
+    ================================= */
+
+    .objections {
+      background: #f3f3f3;
+      color: #000;
+    }
+
+    .objections .tag {
+      color: #168da4;
+    }
+
+    .objection-grid {
+      max-width: 850px;
+      margin-top: 45px;
+    }
+
+    details {
+      border-top: 1px solid #ccc;
+      padding: 22px 0;
+    }
+
+    details:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-size: 16px;
+      font-weight: 900;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      font-size: 23px;
+      font-weight: 400;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      color: #666;
+      padding-top: 14px;
+      max-width: 720px;
+      font-size: 14px;
+    }
+
+    /* ================================
+       FINAL CTA
+    ================================= */
+
+    .final {
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(159,232,245,.15),
+          transparent 38%
+        ),
+        #070707;
+      text-align: center;
+      padding-bottom: 130px;
+    }
+
+    .final .title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 850px;
+    }
+
+    .final-copy {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #999;
+    }
+
+    .final-card {
+      max-width: 620px;
+      margin: 45px auto 0;
+      background: #111;
+      border: 1px solid #303030;
+      border-radius: 25px;
+      padding: 38px;
+      text-align: left;
+    }
+
+    .final-card .price {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .final-card .old {
+      color: #666;
+      text-decoration: line-through;
+      font-size: 17px;
+    }
+
+    .final-card .new {
+      display: block;
+      color: var(--blue);
+      font-size: 65px;
+      font-weight: 950;
+      letter-spacing: -4px;
+      line-height: 1;
+      margin: 4px 0;
+    }
+
+    .final-card .months {
+      color: #777;
+      font-size: 12px;
+    }
+
+    .scarcity {
+      text-align: center;
+      color: #aaa;
+      font-size: 11px;
+      margin-bottom: 20px;
+    }
+
+    .scarcity span {
+      color: var(--red);
+    }
+
+    .final-card .btn {
+      width: 100%;
+    }
+
+    .final-small {
+      color: #555;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 13px;
+    }
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+      padding: 45px 0 100px;
+      background: #040404;
+      color: #555;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      color: white;
+      font-size: 20px;
+      font-weight: 950;
+    }
+
+    .footer-logo span {
+      color: var(--blue);
+    }
+
+    .footer p {
+      font-size: 11px;
+    }
+
+    /* ================================
+       FLOATING WHATSAPP
+    ================================= */
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 58px;
+      height: 58px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      box-shadow: 0 10px 30px rgba(0,0,0,.4);
+      transition: .2s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    .whatsapp svg {
+      width: 29px;
+      height: 29px;
+      fill: white;
+    }
+
+    /* ================================
+       MOBILE CTA
+    ================================= */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* ================================
+       ANIMATION
+    ================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ================================
+       RESPONSIVE
+    ================================= */
+
+    @media(max-width: 900px) {
+
+      .hero-grid,
+      .includes-grid,
+      .anchor-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 50px;
+      }
+
+      .problem-grid,
+      .mechanism-grid,
+      .proof-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contrast-box {
+        grid-template-columns: 1fr;
+      }
+
+      .includes-sticky {
+        position: static;
+      }
+
+      .numbers-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .number:nth-child(2) {
+        border: 0;
+      }
+
+      .number:nth-child(n+3) {
+        border-top: 1px solid rgba(0,0,0,.15);
+        padding-top: 12px;
+      }
+
+    }
+
+    @media(max-width: 600px) {
+
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .topbar {
+        font-size: 10px;
+      }
+
+      header {
+        top: 33px;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 110px;
+        min-height: auto;
+      }
+
+      h1 {
+        font-size: 49px;
+        letter-spacing: -2.8px;
+      }
+
+      .hero-lead {
+        font-size: 16px;
+      }
+
+      .offer {
+        padding: 26px;
+      }
+
+      .new-price {
+        font-size: 52px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .title {
+        letter-spacing: -2px;
+      }
+
+      .contrast-side {
+        padding: 28px;
+      }
+
+      .anchor h2 {
+        font-size: 45px;
+      }
+
+      .final-card {
+        padding: 27px;
+      }
+
+      .final-card .new {
+        font-size: 52px;
+      }
+
+      .whatsapp {
+        bottom: 76px;
+      }
+
+      .mobile-cta {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 9px 11px;
+        background: rgba(5,5,5,.96);
+        border-top: 1px solid #292929;
+        z-index: 90;
+      }
+
+      .mobile-cta .btn {
+        width: 100%;
+        min-height: 52px;
+      }
+
+      footer {
+        padding-bottom: 100px;
+      }
+
+      .footer {
+        display: block;
+      }
+
+      .footer p {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =====================================
+       TOP BAR
+  ====================================== -->
+
+  <div class="topbar">
+    🔥 <strong>PROMO ESPECIAL:</strong>
+    creación + gestión de contenido por $250.000/mes
+    contratando OCTUBRE + NOVIEMBRE + DICIEMBRE.
+  </div>
+
+
+  <!-- =====================================
+       HEADER
+  ====================================== -->
+
+  <header>
+
+    <div class="container nav">
+
+      <div class="logo">
+        franja<span>creativa</span>.
+      </div>
+
+      <a href="#oferta" class="nav-cta">
+        VER LA OFERTA ↓
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div class="reveal">
+
+          <div class="eyebrow">
+            <span class="pulse"></span>
+            CUPO DE PRODUCCIÓN · CÓRDOBA
+          </div>
+
+          <h1>
+            Hacé que tu negocio
+            <span>se vea como merece.</span>
+          </h1>
+
+          <p class="hero-lead">
+            Nos ocupamos de crear y gestionar el contenido de tu marca
+            durante los próximos 3 meses para que dejes de improvisar
+            y tengas una presencia digital <strong>profesional y constante.</strong>
+          </p>
+
+          <div class="hero-bullets">
+
+            <div class="hero-bullet">
+              <span class="check">✓</span>
+              Estrategia y planificación de contenido
+            </div>
+
+            <div class="hero-bullet">
+              <span class="check">✓</span>
+              Producción profesional + tomas con drone
+            </div>
+
+            <div class="hero-bullet">
+              <span class="check">✓</span>
+              Creación + gestión de tus redes
+            </div>
+
+            <div class="hero-bullet">
+              <span class="check">✓</span>
+              Octubre + noviembre + diciembre
+            </div>
+
+          </div>
+
+          <div class="hero-actions">
+
+            <a href="#oferta" class="btn btn-primary">
+              QUIERO MI PLAN POR $250K →
+            </a>
+
+            <a href="#incluye" class="btn btn-secondary">
+              VER QUÉ INCLUYE
+            </a>
+
+          </div>
+
+          <div class="hero-small">
+            Hablás directamente con Franja. Sin formularios.
+          </div>
+
+        </div>
+
+
+        <!-- OFFER -->
+
+        <div class="offer reveal">
+
+          <div class="offer-label">
+            PACK CREACIÓN + GESTIÓN
+          </div>
+
+          <div class="old-price">
+            Valor habitual
+            <strong>$550.000/mes</strong>
+          </div>
+
+          <div class="new-price">
+            $250.000 <small>/ mes</small>
+          </div>
+
+          <div class="saving">
+            AHORRÁS $300.000 CADA MES
+          </div>
+
+          <p class="offer-desc">
+            Contratando los 3 meses de la promoción:
+            <strong>octubre + noviembre + diciembre.</strong>
+          </p>
+
+          <ul class="offer-list">
+
+            <li>
+              <span class="check">✓</span>
+              Estrategia de contenido
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Creación de contenido
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Gestión de redes sociales
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Producción profesional
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Tomas con drone
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Historias y contenido
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary whatsapp-link">
+            QUIERO RESERVAR MI CUPO →
+          </a>
+
+          <div class="offer-note">
+            Cupos sujetos a capacidad de producción.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         NUMBERS
+    ====================================== -->
+
+    <div class="numbers">
+
+      <div class="container numbers-grid">
+
+        <div class="number">
+          <strong>3 MESES</strong>
+          <span>DE TRABAJO CONTINUO</span>
+        </div>
+
+        <div class="number">
+          <strong>$900.000</strong>
+          <span>DE AHORRO VS. VALOR HABITUAL</span>
+        </div>
+
+        <div class="number">
+          <strong>PRODUCCIÓN</strong>
+          <span>PROFESIONAL</span>
+        </div>
+
+        <div class="number">
+          <strong>DRONE</strong>
+          <span>INCLUIDO</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================
+         PROBLEM
+    ====================================== -->
+
+    <section class="problem">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          EL PROBLEMA NO ES INSTAGRAM
+        </div>
+
+        <h2 class="title reveal">
+          El problema es que tu contenido depende de cuándo tenés tiempo.
+        </h2>
+
+        <p class="subtitle reveal">
+          Y mientras tanto, tu competencia sigue apareciendo,
+          mostrando lo que hace y ocupando espacio en la cabeza
+          de tus potenciales clientes.
+        </p>
+
+
+        <div class="problem-grid">
+
+          <div class="problem-card reveal">
+
+            <div class="icon">◌</div>
+
+            <h3>
+              Publicás cuando podés.
+            </h3>
+
+            <p>
+              Una semana estás activo.
+              Después desaparecés durante días.
+              Tu comunicación no tiene continuidad.
+            </p>
+
+          </div>
+
+
+          <div class="problem-card reveal">
+
+            <div class="icon">⌁</div>
+
+            <h3>
+              No sabés qué mostrar.
+            </h3>
+
+            <p>
+              Tenés un buen negocio, pero cuando llega el momento
+              de crear contenido no sabés por dónde empezar.
+            </p>
+
+          </div>
+
+
+          <div class="problem-card reveal">
+
+            <div class="icon">↗</div>
+
+            <h3>
+              Tu Instagram no refleja tu negocio.
+            </h3>
+
+            <p>
+              El producto puede ser excelente.
+              Pero si tu presencia digital no lo comunica,
+              estás perdiendo percepción de valor.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         CONTRAST
+    ====================================== -->
+
+    <section class="contrast">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          DOS CAMINOS
+        </div>
+
+        <h2 class="title reveal">
+          Seguir improvisando o empezar a trabajar tu marca en serio.
+        </h2>
+
+
+        <div class="contrast-box">
+
+          <div class="contrast-side bad reveal">
+
+            <h3>
+              Seguir haciéndolo solo
+            </h3>
+
+            <ul class="contrast-list">
+
+              <li>❌ Pensar qué publicar</li>
+              <li>❌ Buscar ideas todas las semanas</li>
+              <li>❌ Grabar cuando haya tiempo</li>
+              <li>❌ Editar a último momento</li>
+              <li>❌ Publicar sin estrategia</li>
+              <li>❌ Dejar la cuenta abandonada</li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="contrast-side good reveal">
+
+            <h3>
+              Trabajar con Franja
+            </h3>
+
+            <ul class="contrast-list">
+
+              <li>✓ Estrategia definida</li>
+              <li>✓ Calendario de contenido</li>
+              <li>✓ Producción profesional</li>
+              <li>✓ Material audiovisual propio</li>
+              <li>✓ Gestión de redes</li>
+              <li>✓ Una marca activa y consistente</li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MECHANISM
+    ====================================== -->
+
+    <section class="mechanism">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          CÓMO LO HACEMOS
+        </div>
+
+        <h2 class="title reveal">
+          No somos una fábrica de publicaciones.
+          Construimos contenido alrededor de tu negocio.
+        </h2>
+
+        <div class="mechanism-grid">
+
+          <div class="mechanism-card reveal">
+
+            <div class="mechanism-number">
+              01 — ENTENDER
+            </div>
+
+            <h3>
+              Primero entendemos.
+            </h3>
+
+            <p>
+              Qué vendés, a quién, qué te diferencia,
+              qué querés conseguir y cómo debería
+              percibirte tu cliente.
+            </p>
+
+          </div>
+
+
+          <div class="mechanism-card reveal">
+
+            <div class="mechanism-number">
+              02 — CREAR
+            </div>
+
+            <h3>
+              Después producimos.
+            </h3>
+
+            <p>
+              Conceptos, piezas, videos, historias,
+              fotografías y recursos audiovisuales
+              pensados para tu marca.
+            </p>
+
+          </div>
+
+
+          <div class="mechanism-card reveal">
+
+            <div class="mechanism-number">
+              03 — GESTIONAR
+            </div>
+
+            <h3>
+              Finalmente gestionamos.
+            </h3>
+
+            <p>
+              Organizamos y publicamos el contenido
+              para mantener una comunicación constante
+              y profesional.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         INCLUDES
+    ====================================== -->
+
+    <section class="includes" id="incluye">
+
+      <div class="container">
+
+        <div class="includes-grid">
+
+          <div class="includes-sticky reveal">
+
+            <div class="tag">
+              TU PACK INCLUYE
+            </div>
+
+            <h2>
+              Todo lo necesario para dejar de improvisar.
+            </h2>
+
+            <p>
+              No tenés que contratar cinco proveedores diferentes
+              ni convertirte en creador de contenido.
+              Centralizás el proceso con Franja.
+            </p>
+
+            <a href="#oferta" class="btn btn-primary">
+              QUIERO ESTE PACK →
+            </a>
+
+          </div>
+
+
+          <div class="includes-list">
+
+            <div class="include reveal">
+
+              <div class="include-icon">01</div>
+
+              <div>
+                <h3>Estrategia de contenido</h3>
+                <p>
+                  Planificación mensual alineada a tus objetivos.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="include reveal">
+
+              <div class="include-icon">02</div>
+
+              <div>
+                <h3>Creación de contenido</h3>
+                <p>
+                  Conceptos, copies, diseños y piezas adaptadas
+                  a la identidad de tu marca.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="include reveal">
+
+              <div class="include-icon">03</div>
+
+              <div>
+                <h3>Producción audiovisual</h3>
+                <p>
+                  Grabaciones profesionales para generar material
+                  propio y diferencial.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="include reveal">
+
+              <div class="include-icon">04</div>
+
+              <div>
+                <h3>Tomas con drone</h3>
+                <p>
+                  Un recurso visual para mostrar tu negocio
+                  desde otra perspectiva.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="include reveal">
+
+              <div class="include-icon">05</div>
+
+              <div>
+                <h3>Gestión de redes</h3>
+                <p>
+                  Organización y publicación del contenido.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="include reveal">
+
+              <div class="include-icon">06</div>
+
+              <div>
+                <h3>Historias</h3>
+                <p>
+                  Contenido para mantener activa la relación
+                  con tu audiencia.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PRICE ANCHOR
+    ====================================== -->
+
+    <section class="anchor">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          LA CUENTA ES SIMPLE
+        </div>
+
+        <div class="anchor-grid">
+
+          <div class="reveal">
+
+            <h2>
+              No estás pagando $250.000 por publicaciones.
+            </h2>
+
+            <p style="
+              margin-top:22px;
+              max-width:580px;
+              color:#17444c;
+              font-size:17px;
+            ">
+              Estás accediendo durante 3 meses a un servicio cuyo
+              valor habitual es considerablemente mayor.
+            </p>
+
+          </div>
+
+
+          <div class="price-comparison reveal">
+
+            <div class="price-line">
+
+              <span>
+                Valor habitual
+              </span>
+
+              <strong>
+                $550.000 / mes
+              </strong>
+
+            </div>
+
+
+            <div class="price-line">
+
+              <span>
+                Valor habitual × 3 meses
+              </span>
+
+              <strong>
+                $1.650.000
+              </strong>
+
+            </div>
+
+
+            <div class="price-line">
+
+              <span>
+                Tu inversión promocional
+              </span>
+
+              <strong>
+                $750.000
+              </strong>
+
+            </div>
+
+
+            <div class="price-line big">
+
+              <span>
+                Ahorro total
+              </span>
+
+              <strong>
+                $900.000
+              </strong>
+
+            </div>
+
+
+            <div class="saving-total">
+              OCTUBRE + NOVIEMBRE + DICIEMBRE ·
+              $250.000 POR MES
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         PROOF
+    ====================================== -->
+
+    <section class="proof">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          PRUEBA SOCIAL
+        </div>
+
+        <h2 class="title reveal">
+          Marcas que decidieron dejar de improvisar.
+        </h2>
+
+        <p class="subtitle reveal">
+          No lo decimos nosotros, lo dicen los resultados de las empresas que acompañamos día a día.
+        </p>
+
+
+        <div class="proof-grid">
+
+          <!--
+            REEMPLAZAR POR TESTIMONIOS REALES.
+            NO PUBLICAR ESTOS TEXTOS COMO TESTIMONIOS REALES.
+          -->
+
+          <div class="proof-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Trabajar con el equipo cambió por completo nuestra visibilidad en Córdoba y los alrededores. Nos ayudaron a definir una estrategia de contenidos que conecta directo con el cliente local sin perder profesionalismo. Pasamos de publicar por cumplir a generar consultas diarias de alta calidad”
+            </p>
+
+            <div class="proof-author">
+              Gonzalo Peralta, Director Comercial en Grupo Aconcagua Desarrollos
+            </div>
+
+          </div>
+
+
+          <div class="proof-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Nos costaba mucho encontrar comunicadores que no usaran plantillas genéricas. Crearon una voz propia para nuestra red de locales, adaptada al tono de acá pero con un estándar visual impresionante. El engagement en Instagram y el tráfico a la web se dispararon desde el primer mes.”
+            </p>
+
+            <div class="proof-author">
+              Mariana Rossi, Cofundadora y CMO de La Quinta Gourmet
+            </div>
+
+          </div>
+
+
+          <div class="proof-card reveal">
+
+            <div class="stars">
+              ★★★★★
+            </div>
+
+            <p>
+              “Delegar la creación de blog posts, newsletter y redes en ellos fue la mejor decisión del año. Nos presentan reportes claros, cumplen las fechas sin demoras y se nota el impacto directo en la captación de clientes B2B. Son un aliado clave para nuestra proyección nacional.”
+            </p>
+
+            <div class="proof-author">
+              Esteban Benítez, CEO de Apex Logística & Software
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="proof-warning">
+          ya dieron el paso y transformaron su contenido en ventas. ¿Tu negocio cuándo empieza?
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         OBJECTIONS
+    ====================================== -->
+
+    <section class="objections">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          ANTES DE DECIR “LO PIENSO”
+        </div>
+
+        <h2 class="title reveal">
+          Respondemos las preguntas que probablemente estás pensando.
+        </h2>
+
+
+        <div class="objection-grid">
+
+          <details class="reveal">
+
+            <summary>
+              ¿Por qué está $250.000 si normalmente cuesta $550.000?
+            </summary>
+
+            <p>
+              Es una propuesta promocional para incorporar nuevos clientes
+              con un compromiso de trabajo de tres meses consecutivos:
+              octubre, noviembre y diciembre.
+            </p>
+
+          </details>
+
+
+          <details class="reveal">
+
+            <summary>
+              ¿Los $250.000 son por los tres meses?
+            </summary>
+
+            <p>
+              No. Son $250.000 por mes durante los tres meses.
+              La inversión total del período es de $750.000.
+            </p>
+
+          </details>
+
+
+          <details class="reveal">
+
+            <summary>
+              ¿Tengo que saber qué quiero publicar?
+            </summary>
+
+            <p>
+              No. Nosotros trabajamos la estrategia y proponemos
+              qué contenido producir en función de tu negocio,
+              tu audiencia y tus objetivos.
+            </p>
+
+          </details>
+
+
+          <details class="reveal">
+
+            <summary>
+              ¿Tengo que grabar yo los videos?
+            </summary>
+
+            <p>
+              El servicio contempla producción profesional.
+              En la conversación inicial definimos qué necesitamos
+              producir y coordinamos la modalidad de trabajo.
+            </p>
+
+          </details>
+
+
+          <details class="reveal">
+
+            <summary>
+              ¿Trabajan solamente con negocios de Córdoba?
+            </summary>
+
+            <p>
+              Esta campaña está orientada especialmente a negocios
+              de Córdoba para los que la producción presencial sea
+              relevante. Consultanos por WhatsApp para evaluar tu caso.
+            </p>
+
+          </details>
+
+
+          <details class="reveal">
+
+            <summary>
+              ¿Cómo contrato?
+            </summary>
+
+            <p>
+              Simple: tocás cualquiera de los botones de WhatsApp,
+              nos contás qué negocio tenés y coordinamos los siguientes
+              pasos. Sin formularios interminables.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================
+         FINAL CTA
+    ====================================== -->
+
+    <section class="final" id="oferta">
+
+      <div class="container">
+
+        <div class="tag reveal">
+          OCTUBRE · NOVIEMBRE · DICIEMBRE
+        </div>
+
+        <h2 class="title reveal">
+          Tres meses para dejar de improvisar
+          y empezar a construir tu marca.
+        </h2>
+
+        <p class="final-copy reveal">
+          Si sabés que tu contenido podría estar mucho mejor,
+          este es el momento de hablar.
+        </p>
+
+
+        <div class="final-card reveal">
+
+          <div class="scarcity">
+            <span>●</span>
+            Trabajamos con cupos limitados según capacidad de producción.
+          </div>
+
+          <div class="price">
+
+            <span class="old">
+              Valor habitual: $550.000/mes
+            </span>
+
+            <span class="new">
+              $250.000
+            </span>
+
+            <span class="months">
+              POR MES · OCTUBRE + NOVIEMBRE + DICIEMBRE
+            </span>
+
+          </div>
+
+
+          <ul class="offer-list">
+
+            <li>
+              <span class="check">✓</span>
+              Estrategia y planificación
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Creación de contenido
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Producción profesional
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Tomas con drone
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Gestión de redes
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Historias y contenido
+            </li>
+
+          </ul>
+
+
+          <a href="#" class="btn btn-primary whatsapp-link">
+            QUIERO HABLAR CON FRANJA →
+          </a>
+
+          <div class="final-small">
+            Te explicamos cómo funciona y vemos si el plan encaja
+            con tu negocio.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer>
+
+    <div class="container footer">
+
+      <div class="footer-logo">
+        franja<span>creativa</span>.
+      </div>
+
+      <p>
+        Estrategia · Contenido · Diseño · Publicidad
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================
+       FLOATING WHATSAPP
+  ====================================== -->
+
+  <a
+    href="https://wa.me/5493516104391?text=Hola%20Franja,%20estuve%20viendo%20su%20web%20y%20quiero%20consultar%20por%20un%20proyecto."
+    class="whatsapp whatsapp-link"
+    aria-label="WhatsApp"
+  >
+
+    <svg viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.88 11.88 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.6 5.96L.06 24l6.27-1.64a11.9 11.9 0 0 0 5.73 1.46h.01c6.56 0 11.9-5.34 11.9-11.91 0-3.18-1.24-6.17-3.45-8.43ZM12.07 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.72.97.99-3.63-.23-.37a9.86 9.86 0 1 1 8.36 4.62Zm5.41-7.39c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.96 1.18-.18.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.47-1.74-1.64-2.03-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.68-1.64-.93-2.25-.24-.59-.49-.51-.68-.52h-.58c-.2 0-.52.07-.8.37-.28.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.72.23 1.38.2 1.9.12.58-.09 1.78-.73 2.03-1.44.25-.71.25-1.32.17-1.44-.07-.13-.27-.2-.57-.35Z"/>
+    </svg>
+
+  </a>
+
+
+  <!-- =====================================
+       MOBILE CTA
+  ====================================== -->
+
+  <div class="mobile-cta">
+
+    <a href="#" class="btn btn-primary whatsapp-link">
+      QUIERO MI PLAN POR $250K →
+    </a>
+
+  </div>
+
+
+  <script>
+
+    /* =====================================
+       CONFIGURACIÓN
+    ====================================== */
+
+    /*
+      REEMPLAZAR.
+
+      Formato:
+      549 + código de área + número
+
+      Ejemplo ficticio:
+      5493511234567
+    */
+
+    const WHATSAPP_NUMBER = "549XXXXXXXXXX";
+
+
+    /*
+      Mensaje inicial.
+
+      Se puede modificar para filtrar mejor
+      los leads provenientes de la landing.
+    */
+
+    const WHATSAPP_MESSAGE =
+      "Hola Franja 👋 Vi la propuesta de creación y gestión de contenido por $250.000/mes para octubre, noviembre y diciembre. Quiero consultar por disponibilidad. Mi negocio es: ";
+
+
+    /* =====================================
+       WHATSAPP
+    ====================================== */
+
+    document.querySelectorAll(".whatsapp-link").forEach(button => {
+
+      button.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        const message =
+          encodeURIComponent(WHATSAPP_MESSAGE);
+
+        const url =
+          `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+
+        /*
+          Si instalás Meta Pixel:
+          
+          fbq("track", "Contact");
+        */
+
+        window.open(url, "_blank");
+
+      });
+
+    });
+
+
+    /* =====================================
+       SCROLL REVEAL
+    ====================================== */
+
+    const elements =
+      document.querySelectorAll(".reveal");
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .1
+        }
+      );
+
+
+    elements.forEach(element => {
+      observer.observe(element);
+    });
+
+
+    /* =====================================
+       UTM
+    ====================================== */
+
+    const urlParams =
+      new URLSearchParams(window.location.search);
+
+    const tracking = {
+
+      source: urlParams.get("utm_source"),
+
+      medium: urlParams.get("utm_medium"),
+
+      campaign: urlParams.get("utm_campaign"),
+
+      content: urlParams.get("utm_content")
+
+    };
+
+    console.log("Campaign data:", tracking);
+
+
+    /* =====================================
+       FAQ ACCORDION
+    ====================================== */
+
+    const details =
+      document.querySelectorAll("details");
+
+    details.forEach(current => {
+
+      current.addEventListener("toggle", () => {
+
+        if (current.open) {
+
+          details.forEach(other => {
+
+            if (other !== current) {
+              other.removeAttribute("open");
+            }
+
+          });
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
